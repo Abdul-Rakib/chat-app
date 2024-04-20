@@ -1,0 +1,81 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* Container styles */
+.container {
+    width: 100%;
+    max-width: 350px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Solid border with 50% opacity */
+    border-radius: 10px;
+    padding: 40px 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+
+
+/* Input field styles */
+input[type=email],
+input[type=text],
+input[type=file],
+input[type=password],
+input[type=submit] {
+    width: 100%;
+    padding: 15px 40px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type=email]:focus,
+input[type=file]:focus,
+input[type=name]:focus,
+input[type=password]:focus {
+    border-color: #66afe9;
+}
+
+/* Submit button styles */
+input[type=submit] {
+    background-color: #1684d9;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #3d8ec8;
+}
+
+/* Error message styles */
+.error-message {
+    color: red;
+    margin-bottom: 15px;
+}
+
+/* Login text styles */
+.login-text {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}

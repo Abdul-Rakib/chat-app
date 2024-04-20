@@ -1,0 +1,31 @@
+
+<!-- Link to the CSS file -->
+<link rel="stylesheet" href="/css/login-style.css">
+
+<div class="container">
+
+
+<h1>Login</h1>
+
+<% if(typeof message !=='undefined') { %>
+
+    <h4 style="color: red;"><%= message %></h4>
+
+<% } %>
+
+
+    <form action="" method="POST">
+    
+        <input type="email" placeholder="email" name="email" required><br><br>
+    
+        <input type="password" placeholder="password" name="password" required><br><br>
+    
+        <input type="submit" value="login">
+    </form>
+
+    <div>
+        Dont have account ?
+        <a href="/register">Register</a>
+    </div>
+</div>
+

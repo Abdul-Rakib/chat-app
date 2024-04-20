@@ -1,0 +1,24 @@
+<!-- Link to the CSS file -->
+<link rel="stylesheet" href="/css/login-style.css">
+
+<div class="container">
+
+    <h1>Register</h1>
+
+    <form action="" method="POST" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="name" class="form-input" required><br><br>
+        <input type="email" name="email" placeholder="email" class="form-input" required><br><br>
+        <input type="file" name="image" class="form-input" required><br><br>
+        <input type="password" name="password" placeholder="password" class="form-input" required><br><br>
+        <input type="submit" value="Register" class="form-submit">
+    </form>
+
+    <% if (typeof message !== 'undefined') { %>
+        <p style="color: green;"><%= message %></p>
+    <% } %>
+
+    <div>
+        Already have an account? <a href="/login">Login</a>
+    </div>
+
+</div>
